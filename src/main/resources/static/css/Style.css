@@ -1,0 +1,158 @@
+﻿  .zoomin img {
+            height: 350px;
+            width: 550px;
+            margin-left:20px;
+            margin-right:20px;
+            -webkit-transition: all 2s ease;
+            -moz-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+        }
+
+.zoomin img:hover {
+                width: 800px;
+                height: 500px;
+            }
+
+body{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.sharing-buttons{
+  list-style:none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sharing-buttons li{
+  display: inline;
+}
+
+.sharing-buttons a{
+  border: 1px solid;
+  padding: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sharing-buttons a:hover{
+  color: #eee;
+  text-decoration: none;
+}
+
+.fa{
+  padding: 0.5em;
+}
+
+.facebook{
+  background: #3B5998; 
+}
+
+.twitter{
+  background: #00ACED;
+}
+
+.google-plus{
+  background: #D14836
+}
+/*Video Responsive*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}*/
+/*Carusel*/
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+/*Social Media icons*/
+.social ul {
+	overflow: auto;
+    margin-left:80px;
+    margin-top:10px;
+}
+
+.social ul li {
+	list-style-type: none;
+	float: left;
+}
+
+ .social ul li a i{
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	font-size: 15px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
