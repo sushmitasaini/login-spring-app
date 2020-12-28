@@ -1,114 +1,133 @@
 <html>
-	<head> 
-		<meta charset="utf-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,700,500" rel="stylesheet" type="text/css" />
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<!--Stylesheet-->
-		<link href="../static/css/loginnsignup.css" rel="stylesheet" type="text/css" />
-		<link href="../static/css/Style.css" rel="stylesheet" type="text/css" />
-		<link href="../static/css/intellilearn1.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="../static/js/loginnsignup.js"></script>
-	</head>
-	<body>
-	    <section id="homeSection" class="sectionBackground" style="padding-bottom:100px">
-            	<div class="container" style="padding-top:30px">
-                	<div class="row" >
-				<div class="form-login">
-					<div id="loginDiv" class="col-sm-offset-2 col-sm-4" style="margin-top:35px;padding-top:50px;padding: 20px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: #00aeef;padding-bottom: 30px;padding-top: 40px;">
-						<div id="loginForm" style="display:none">
-							<div class="col-sm-offset-2 col-sm-8" align="center" style="padding-top:50px">
-						            	<span class="glyphicon glyphicon-user" style="color:#00aeef; font-size:50px;padding-bottom:5px"></span><br>
-                                    				<p53 align="center">User Login</p53><br>
-						        </div>
-						        <div class="col-sm-offset-2 col-sm-8" align="center" style="padding-top: 15px; padding:10px">
-						        	<div class="input-group">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,700,500" rel="stylesheet" type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--Stylesheet-->
+    <link href="../static/css/loginnsignup.css" th:href="@{/css/loginnsignup.css}" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/Style.css" th:href="@{/css/Style.css}" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/intellilearn1.css" th:href="@{/css/intellilearn1.css}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../static/js/loginnsignup.js" th:src="@{/js/loginnsignup.js}"></script>
+</head>
+<body>
+<section id="homeSection" class="sectionBackground" style="padding-bottom:100px">
+    <div class="container" style="padding-top:30px">
+        <div class="row">
+            <div class="form-login">
+                <div id="loginDiv" class="col-sm-offset-2 col-sm-4"
+                     style="margin-top:35px;padding-top:50px;padding: 20px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: #00aeef;padding-bottom: 30px;padding-top: 40px;">
+                    <div id="loginForm" style="display:none">
+                        <div class="col-sm-offset-2 col-sm-8" align="center" style="padding-top:50px">
+                            <span class="glyphicon glyphicon-user"
+                                  style="color:#00aeef; font-size:50px;padding-bottom:5px"></span><br>
+                            <p53 align="center">User Login</p53>
+                            <br>
+                        </div>
+                        <div class="col-sm-offset-2 col-sm-8" align="center" style="padding-top: 15px; padding:10px">
+                            <div class="input-group">
 									<span class="input-group-addon">
 									        <i class="glyphicon glyphicon-user"></i>
 								        </span>
-									<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Enter your user name">
-								</div>
-								<br>
-								<div class="input-group">
+                                <input type="text" class="form-control" id="name"
+                                       aria-describedby="inputGroupSuccess3Status" placeholder="Enter your user name">
+                            </div>
+                            <br>
+                            <div class="input-group">
 									<span class="input-group-addon">
 										<i class="glyphicon glyphicon-lock"></i>
 									</span>
-									<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Enter your password">
-								</div>
-								<br>
-								<button type="button" class="btn-info1">Login
-								</button>
-							</div> 
-						</div>
-						<div id="loginContent">
-							<div class="col-sm-11" align="left" style="padding-top:90px;">
-								<p50>Login</p50><br><br>
-								<p52>In python we do not use to declare the variable by defining its data type first and then assign it value. We can directly 
-									pass value to the variable.</p52><br>
-							</div>
-							<div class="col-sm-5" style="padding-bottom:90px;padding-top:20px">
-								<button type="button" class="btn-info2" onclick="changeSec('login')">Login</button>
-							</div>
-						</div>	
-                        		</div>
-                    		</div>
-				<div class="col-sm-4" id="signupDiv" style="height:500px;padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: rgba(51, 51, 51, 0.0);padding-bottom: 30px;padding-top: 40px">
-						
-					<div id="signupForm" >
-						<div class="col-sm-offset-2 col-sm-8" align="center">
-							<span class="glyphicon glyphicon-user" style="color:#00aeef; font-size:50px;padding-bottom:5px"></span><br>
-							<p53 align="center">Sign Up</p53>
-						</div>
-						<div class="col-sm-offset-2 col-sm-8" align="center" style="padding-top: 15px; padding:10px">
-							<div class="input-group">
+                                <input type="text" class="form-control" id="password"
+                                       aria-describedby="inputGroupSuccess3Status" placeholder="Enter your password">
+                            </div>
+                            <br>
+                            <button type="button" class="btn-info1">Login
+                            </button>
+                        </div>
+                    </div>
+                    <div id="loginContent">
+                        <div class="col-sm-11" align="left" style="padding-top:90px;">
+                            <p50>Login</p50>
+                            <br><br>
+                            <p52>In python we do not use to declare the variable by defining its data type first and
+                                then assign it value. We can directly
+                                pass value to the variable.
+                            </p52>
+                            <br>
+                        </div>
+                        <div class="col-sm-5" style="padding-bottom:90px;padding-top:20px">
+                            <button type="button" class="btn-info2" onclick="changeSec('login')">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" id="signupDiv"
+                 style="height:500px;padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: rgba(51, 51, 51, 0.0);padding-bottom: 30px;padding-top: 40px">
+
+                <div id="signupForm">
+                    <div class="col-sm-offset-2 col-sm-8" align="center">
+                        <span class="glyphicon glyphicon-user"
+                              style="color:#00aeef; font-size:50px;padding-bottom:5px"></span><br>
+                        <p53 align="center">Sign Up</p53>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-8" align="center" style="padding-top: 15px; padding:10px">
+                        <div class="input-group">
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-user"></i>
 								</span>
-								<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Enter user name">
-							</div>
-							<br>
-							<div class="input-group">
+                            <input type="text" class="form-control" id="name"
+                                   aria-describedby="inputGroupSuccess3Status" placeholder="Enter user name">
+                        </div>
+                        <br>
+                        <div class="input-group">
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-envelope"></i>
 								</span>
-								<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Enter your email">
-							</div>
-							<br>
-							<div class="input-group">
+                            <input type="text" class="form-control" id="email"
+                                   aria-describedby="inputGroupSuccess3Status" placeholder="Enter your email">
+                        </div>
+                        <br>
+                        <div class="input-group">
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-lock"></i>
 								</span>
-								<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Enter your password">
-							</div>
-							<br>
-							<div class="input-group">
+                            <input type="text" class="form-control" id="password"
+                                   aria-describedby="inputGroupSuccess3Status" placeholder="Enter your password">
+                        </div>
+                        <br>
+                        <div class="input-group">
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-phone"></i>
 								</span>
-								<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Enter mobile number">
-							</div>
-							<br>
-							<button type="button" class="btn-info1">Sign Up</button>
-						</div> 
-					</div>	
-					<div id="signupContent" style="display:none">
-						<div class="col-sm-11" align="left" style="padding-top:90px;">
-						        <p50>Sign Up</p50><br><br>
-							<p52>In python we do not use to declare the variable by defining its data type first and then assign it value. We can directly 
-				                	pass value to the variable.</p52><br>
-						</div>
-						<div class="col-sm-5" style="padding-bottom:90px;padding-top:20px">
-							<button type="button" class="btn-info2" onclick="changeSec('signup')">Sign Up</button>
-                            			</div>
-					</div>						
-                    		</div>
-			</div>
-          	</div>
-	</section>
-															     
-    </body>
+                            <input type="text" class="form-control" id="mobile"
+                                   aria-describedby="inputGroupSuccess3Status" placeholder="Enter mobile number">
+                        </div>
+                        <br>
+                        <button type="button" class="btn-info1">Sign Up</button>
+                    </div>
+                </div>
+                <div id="signupContent" style="display:none">
+                    <div class="col-sm-11" align="left" style="padding-top:90px;">
+                        <p50>Sign Up</p50>
+                        <br><br>
+                        <p52>In python we do not use to declare the variable by defining its data type first and then
+                            assign it value. We can directly
+                            pass value to the variable.
+                        </p52>
+                        <br>
+                    </div>
+                    <div class="col-sm-5" style="padding-bottom:90px;padding-top:20px">
+                        <button type="button" class="btn-info2" onclick="changeSec('signup')">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
 </html>
