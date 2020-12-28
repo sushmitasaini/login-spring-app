@@ -4,15 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.loginsignup.demo.model.User;
-import com.loginsignup.demo.repository.UserRepository;
+import com.loginsignup.demo.repository.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * UserController
  */
+@Controller
 public class UserController {
 
     @Autowired
